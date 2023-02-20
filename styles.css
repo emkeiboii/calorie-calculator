@@ -3,6 +3,7 @@
   --clr-dark: #2B298D;
   --clr-white: white;
   --clr-black: black;
+  --clr-clear: rgb(0, 164, 0);
 }
 
 
@@ -19,20 +20,26 @@ body{
   font-size: 1rem;
 }
 
+/* navigation */
+
 nav{
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: var(--clr-primary);
   color: var(--clr-white);
-  padding: 30px;
+  padding: 25px;
   position: fixed;
   top: 0;
   width: 100%;
+  box-shadow: 0px 0px 10px var(--clr-black);
 }
+
+/* BMI paragraphs */
 
 p{
   font-weight: 400;
+  text-align: justify;
 }
 
 h1{
@@ -40,26 +47,108 @@ h1{
   font-weight: 800;
 }
 
+h2{
+  font-size: 1.5rem;
+  color: #2B298D;
+}
+
 .bmi-content{
-  padding-top: 120px;
+  padding-top: 160px;
   display: grid;
   grid-template-columns: 560px;
   grid-gap: 20px;
   justify-content: center;
 }
 
-
-
 .bmi-title{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 10px;
 }
 
-h2{
-  font-size: 1.5rem;
-  color: #2B298D;
+.bmi-content button{
+  cursor: pointer;
+  background-color: var(--clr-primary);
+  border-style: none;
+  padding: 8px 17px;
+  color: var(--clr-white);
+  border-radius: calc(8px + 1rem);
 }
+
+.bmi-content button:hover{
+  background-color: #2B298D;
+}
+
+.paragraph{
+  padding-bottom: 10px;
+}
+
+/* calculator */
+
+.bmi-calculator{
+  background-color: var(--clr-primary);
+  display: grid;
+  grid-template-columns: auto;
+  grid: "gender gender gender"
+  "information information information"
+  "functionalities functionalities functionalities"
+  "results results";
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--clr-white);
+  padding: 10px;
+}
+
+.row.gender{
+  grid-area: "gender";
+  justify-content: space-around;
+}
+
+.row.gender .input{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row.information{
+  grid-area: "information";
+}
+
+.row.functionalities{
+  grid-area: "functionalities";
+}
+
+.row.functionalities button{
+  background-color: var(--clr-white);
+  color: var(--clr-primary);
+}
+
+.row.functionalities button.calculate:hover{
+  background-color: var(--clr-dark);
+  color: var(--clr-white);
+}
+
+.row.functionalities button.clear:hover{
+  color: white;
+  background-color: var(--clr-clear);
+}
+
+.row.results{
+  grid-area: "results";
+  justify-content: space-around;
+}
+
+
+
 
 
 
