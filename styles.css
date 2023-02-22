@@ -127,6 +127,20 @@ h2{
   padding: 5px;
 }
 
+.btns button{
+  background-color: var(--clr-white);
+  color: var(--clr-primary);
+  margin: 0 10px 10px;
+}
+
+#clear:hover{
+  background-color: var(--clr-clear);
+  color: var(--clr-white);
+}
+
+#calculate:hover{
+  color: var(--clr-white);
+}
 
 
 
