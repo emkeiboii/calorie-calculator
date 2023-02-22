@@ -86,17 +86,34 @@ h2{
 
 /* calculator */
 
+.container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--clr-primary);
+  padding: 35px;
+  border-radius: 30px;
+  margin: 40px;
+  color: var(--clr-white);
+}
+
 .bmi-calculator{
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
 
 .form-group{
+  padding: 0.55rem 0;
   display: grid;
   grid-template-columns: 1fr 4fr;
   align-items: center;
+}
+
+.form-group p, label{
+  padding: 0.5rem;
+  font-weight: 100;
+  font-size: 1.2rem;
 }
 
 .form-group.col-3{
@@ -104,6 +121,12 @@ h2{
   grid-template-columns: 1fr 2fr 2fr;
   align-items: center;
 }
+
+.form-group input{
+  border-style: none;
+  padding: 5px;
+}
+
 
 
 
