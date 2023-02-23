@@ -54,7 +54,11 @@
 </div>
 <div class="container">
   <div class="bmi-calculator" id="bmi-si">
-    <form>
+    <form id="BMI-form">
+      <div class="form-group">
+        <p>age</p>
+        <input type="text" class="form-input" id="age" placeholder="1-120">
+      </div>
       <div class="form-group col-3">
         <p>gender</p>
           <div>
@@ -65,10 +69,6 @@
             <input type="radio" name="gender" id="female" value="female">
             <label for="female">female</label>
           </div>
-      </div>
-      <div class="form-group">
-        <p>age</p>
-        <input type="text" class="form-input" id="age" placeholder="1-120">
       </div>
       <div class="form-group">
         <p>height</p>
@@ -82,11 +82,14 @@
   </div>
     <div class="btns">
       <button type="button" class="btn" id="calculate">calculate</button>
-      <button type="button" class="btn" id="clear">clear</button>
+      <button type="button" class="btn" id="clear" value="reset">clear</button>
     </div>
     <div class="results">
-      <h4>results</h4>
-      <p class="bmi-results" id="bmi-results"></p>
+      <span class = "alert-error">Some inputs are invalid!</span>
+          <div class = "bmi-output">
+            <h4 id = "bmi-value"></h3>
+            <p id = "bmi-category"></p>
+            <p id = "bmi-gender"></p>
     </div>
     </div>
   </div>
