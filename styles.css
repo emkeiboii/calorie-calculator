@@ -12,7 +12,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
+
 
 body{
   font-family: 'inter',sans-serif;
@@ -74,6 +76,11 @@ h2{
   padding: 8px 17px;
   color: var(--clr-white);
   border-radius: calc(8px + 1rem);
+}
+
+.bmi-content button a{
+  color: var(--clr-white);
+  text-decoration: none;
 }
 
 .bmi-content button:hover{
