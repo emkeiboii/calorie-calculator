@@ -1,2 +1,3 @@
-# bmi-calculator
-bmi calculator in the form of a blog for lifestyle web pages
+# calorie-calculator
+
+Tool for the Lifestyle blog, made with HTML, CSS and Javascript.
